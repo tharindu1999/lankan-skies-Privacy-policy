@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Lankan Skies — a mobile game by Lankan Skies. Learn how we handle your data." />
+  <meta name="robots" content="index, follow" />
+  <title>Privacy Policy — Lankan Skies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #0a0c10;
+      --bg-secondary: #111318;
+      --bg-card: #161a22;
+      --bg-card-hover: #1c2130;
+      --border: rgba(255, 255, 255, 0.07);
+      --border-accent: rgba(100, 160, 255, 0.25);
+      --text-primary: #e8eaf0;
+      --text-secondary: #8a90a0;
+      --text-muted: #5a6070;
+      --accent: #4a90e2;
+      --accent-light: #6aaeff;
+      --accent-glow: rgba(74, 144, 226, 0.15);
+      --accent-gold: #e8b84b;
+      --accent-gold-glow: rgba(232, 184, 75, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.75;
+      font-size: 15px;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Background Decoration ── */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -20%;
+      left: -10%;
+      width: 60%;
+      height: 60%;
+      background: radial-gradient(ellipse at center, rgba(74, 144, 226, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: -20%;
+      right: -10%;
+      width: 50%;
+      height: 50%;
+      background: radial-gradient(ellipse at center, rgba(232, 184, 75, 0.04) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Layout ── */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-radius: 999px;
+      padding: 8px 18px;
+      margin-bottom: 28px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent-light);
+      letter-spacing: 0.3px;
+    }
+
+    .app-badge .dot {
+      width: 7px;
+      height: 7px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      box-shadow: 0 0 6px var(--accent-light);
+      flex-shrink: 0;
+    }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #e8eaf0 30%, var(--accent-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .effective-date {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* ── Summary Card ── */
+    .summary-card {
+      background: linear-gradient(135deg, rgba(74, 144, 226, 0.08) 0%, rgba(74, 144, 226, 0.03) 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+
+    .summary-card p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      line-height: 1.7;
+    }
+
+    .summary-card strong {
+      color: var(--accent-light);
+      font-weight: 600;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      transition: border-color 0.25s ease, background 0.25s ease;
+    }
+
+    section:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(255, 255, 255, 0.11);
+    }
+
+    section h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.2px;
+    }
+
+    section h2 .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: var(--accent-glow);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    section p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    section ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+      display: grid;
+      gap: 7px;
+    }
+
+    section ul li {
+      color: var(--text-secondary);
+      font-size: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.6;
+    }
+
+    section ul li::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    /* ── Permission pills ── */
+    .permission-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .permission-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+    }
+
+    .permission-item .perm-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent-light);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      margin-bottom: 4px;
+    }
+
+    .permission-item p {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    /* ── Contact section ── */
+    .contact-section {
+      background: linear-gradient(135deg, rgba(232, 184, 75, 0.07) 0%, rgba(232, 184, 75, 0.02) 100%);
+      border-color: rgba(232, 184, 75, 0.2);
+    }
+
+    .contact-section h2 .icon {
+      background: var(--accent-gold-glow);
+      border-color: rgba(232, 184, 75, 0.3);
+    }
+
+    .contact-section a {
+      color: var(--accent-gold);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    footer strong {
+      color: var(--text-secondary);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .container {
+        padding: 32px 16px 64px;
+      }
+
+      section {
+        padding: 22px 20px;
+      }
+
+      .summary-card {
+        padding: 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="app-badge">
+        <span class="dot"></span>
+        com.lankanskies.game
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective Date: May 21, 2026</p>
+    </header>
+
+    <!-- Intro Summary -->
+    <div class="summary-card">
+      <p>
+        <strong>Lankan Skies</strong> is a mobile game that respects your privacy. This policy explains how the app
+        handles information when you install and play. The short version: <strong>we do not collect personal
+        information</strong>, we do not run ads, and your gameplay data stays on your device.
+      </p>
+    </div>
+
+    <!-- 1. Information We Collect -->
+    <section>
+      <h2><span class="icon">📋</span> Information We Collect</h2>
+      <p>
+        Lankan Skies does not ask you to create an account and does not collect your name, email address, phone
+        number, contacts, precise location, camera data, microphone data, or payment information.
+      </p>
+      <p>
+        The app saves game progress and preferences locally on your device so the game can function correctly.
+        This may include:
+      </p>
+      <ul>
+        <li>High score, coins, and total distance</li>
+        <li>Furthest route progress and games played</li>
+        <li>Sound, haptic, and graphics settings</li>
+        <li>Tutorial status and selected character, bike style, and trail</li>
+        <li>Mission progress, best-run statistics, and photo count</li>
+      </ul>
+      <p style="margin-top: 14px;">
+        This gameplay information is stored locally on your device. We do not receive it, sell it, or use it
+        to identify you.
+      </p>
+    </section>
+
+    <!-- 2. Device Permissions -->
+    <section>
+      <h2><span class="icon">🔒</span> Device Permissions</h2>
+      <p>Lankan Skies requests the following Android permissions:</p>
+      <div class="permission-group">
+        <div class="permission-item">
+          <div class="perm-name">VIBRATE</div>
+          <p>Used to provide optional haptic feedback during gameplay. This permission does not collect personal information.</p>
+        </div>
+        <div class="permission-item">
+          <div class="perm-name">INTERNET</div>
+          <p>
+            Included because the app is built with a mobile web runtime and may require standard platform
+            connectivity support. The current game does not use user accounts, online leaderboards, advertising,
+            in-app purchases, or analytics tracking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Photo Mode -->
+    <section>
+      <h2><span class="icon">📷</span> Photo Mode</h2>
+      <p>
+        Lankan Skies includes a photo mode that can create an image from the game screen when you choose to
+        capture it. This feature does not use your device camera. The image is created from the game canvas
+        and is saved or handled by your device only when you choose to use the feature.
+      </p>
+      <p>
+        We do not upload, transmit, or access these images in any way.
+      </p>
+    </section>
+
+    <!-- 4. Android Backup -->
+    <section>
+      <h2><span class="icon">☁️</span> Android Backup</h2>
+      <p>
+        Depending on your Android device settings, the operating system may back up app data through your
+        Google account. This backup is managed and controlled by Android and your Google account settings —
+        not by us. We do not directly access, store, or interact with that backup data.
+      </p>
+    </section>
+
+    <!-- 5. Third-Party Services -->
+    <section>
+      <h2><span class="icon">🔗</span> Third-Party Services</h2>
+      <p>
+        Lankan Skies does not include advertising SDKs or analytics SDKs in the current release.
+      </p>
+      <p>
+        Google Play and Android may process information related to app installation, app updates, crash reports,
+        device diagnostics, and store activity according to
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--accent-light); text-decoration: none; font-weight: 500;">Google's policies</a>
+        and your device settings.
+      </p>
+    </section>
+
+    <!-- 6. How We Use Information -->
+    <section>
+      <h2><span class="icon">⚙️</span> How We Use Information</h2>
+      <p>
+        Locally stored gameplay information is used exclusively to provide game features on your device:
+      </p>
+      <ul>
+        <li>Save and restore game progress</li>
+        <li>Remember your settings between sessions</li>
+        <li>Unlock in-game items and track missions</li>
+        <li>Improve the play experience on your device</li>
+      </ul>
+    </section>
+
+    <!-- 7. Sharing of Information -->
+    <section>
+      <h2><span class="icon">🤝</span> Sharing of Information</h2>
+      <p>
+        We do not sell, rent, trade, or share personal information from Lankan Skies. The app does not transmit
+        your local gameplay progress to any server.
+      </p>
+    </section>
+
+    <!-- 8. Data Retention and Deletion -->
+    <section>
+      <h2><span class="icon">🗑️</span> Data Retention and Deletion</h2>
+      <p>
+        Game progress and settings remain on your device until you:
+      </p>
+      <ul>
+        <li>Clear the app data through Android Settings</li>
+        <li>Reset the device storage for the app</li>
+        <li>Uninstall the app</li>
+      </ul>
+      <p style="margin-top: 12px;">
+        If Android backup is enabled on your device, some app data may be restored by Android according to
+        your Google account backup settings.
+      </p>
+    </section>
+
+    <!-- 9. Children -->
+    <section>
+      <h2><span class="icon">👶</span> Children</h2>
+      <p>
+        Lankan Skies is designed as a general-audience game. We do not knowingly collect personal information
+        from children. If you believe a child has provided personal information through the app, please contact
+        us so we can review the issue.
+      </p>
+    </section>
+
+    <!-- 10. Security -->
+    <section>
+      <h2><span class="icon">🛡️</span> Security</h2>
+      <p>
+        We take a data minimization approach: gameplay progress is kept on your device and the app avoids
+        account registration, advertising tracking, and analytics tracking in the current release.
+      </p>
+      <p>
+        No method of storage or transmission is completely secure, but the app is designed to avoid collecting
+        personal information where it is not needed.
+      </p>
+    </section>
+
+    <!-- 11. Changes to This Policy -->
+    <section>
+      <h2><span class="icon">📝</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy when the app changes, when new features are added, or when legal
+        requirements change. Any update will be published at this URL with a revised effective date. We encourage
+        you to review this page periodically.
+      </p>
+    </section>
+
+    <!-- 12. Contact -->
+    <section class="contact-section">
+      <h2><span class="icon">✉️</span> Contact</h2>
+      <p>
+        For questions about this Privacy Policy or how Lankan Skies handles data, please contact us at
+        your support email address on the Google Play Store listing.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p><strong>Lankan Skies</strong> &mdash; Privacy Policy &mdash; Effective May 21, 2026</p>
+      <p style="margin-top: 6px;">Package: com.lankanskies.game</p>
+    </footer>
+
+  </div>
+</body>
+</html>
